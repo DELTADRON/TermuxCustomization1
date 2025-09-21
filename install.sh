@@ -3,6 +3,8 @@ apt upgrade
 # apt install zsh
 apt install curl python-pip git 
 mkdir -p ~/tmp
+cp draw ~/tmp
+cp -r termux ~/tmp
 cd ~/tmp
 
 # Install ohmyzsh
@@ -46,14 +48,14 @@ git clone https://github.com/remo7777/Termux-Banner-Bash.git
 cd Termux-Banner-Bash
 bash setup
 
-cd ~/tmp
-
-cp draw ~/.draw
 # rm -rf ~/.termux/termux.properties
 # cp termux/termux.properties ~/.termux/
 
 # /data/data/com.termux/files/usr/bin/zsh
 
+cd ~/tmp
+
+cp draw ~/.draw
 termux-reload-settings
 
 # Oh-my--zsh (custom ppromt + rpromt), logo-ls, eza, base16-atelierforest.dark.256.xresources, custom-keyboard properties.
