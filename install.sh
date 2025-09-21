@@ -1,9 +1,10 @@
 apt upgrade
 # Install dependencys
 # apt install zsh
-apt install curl python-pip git 
+apt install curl python-pip git viu
 mkdir -p ~/tmp
 cp draw ~/tmp
+cp 4Max.flf ~/tmp
 cp -r termux ~/tmp
 cd ~/tmp
 
@@ -15,7 +16,6 @@ cd ~/tmp
 
 pip install lolcat
 pkg install figlet termux-tools toilet
-apt install viu
 
 # Clone termux style
 git clone https://github.com/adi1090x/termux-style
@@ -32,7 +32,7 @@ cd ~/tmp
 
 git clone https://github.com/xero/figlet-fonts
 
-mv figlet-fonts/* ~/../use/share/figlet
+mv figlet-fonts/* ~/../usr/share/figlet
 
 # Move files
 
