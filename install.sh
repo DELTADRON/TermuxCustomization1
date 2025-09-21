@@ -17,6 +17,14 @@ cd ~/tmp
 pip install lolcat
 pkg install figlet termux-tools toilet
 
+# Move files
+
+mkdir -p ~/.termux/img
+cp -r termux/img/* ~/.termux/img
+
+# Replace .draw with my .draw file in ~/
+# Replace .termux with my .termux in ~/
+
 # Clone termux style
 git clone https://github.com/adi1090x/termux-style
 
@@ -34,13 +42,6 @@ git clone https://github.com/xero/figlet-fonts
 
 mv figlet-fonts/* ~/../usr/share/figlet
 
-# Move files
-
-mkdir -p ~/.termux/img
-cp termux/img/* ~/.termux/img
-
-# Replace .draw with my .draw file in ~/
-# Replace .termux with my .termux in ~/
 
 # Termux banner
 git clone https://github.com/remo7777/Termux-Banner-Bash.git
